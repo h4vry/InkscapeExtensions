@@ -146,7 +146,7 @@ class Length(inkex.Effect):
                 a =[]
                 p = cubicsuperpath.parsePath(node.get('d'))
                 num = 1
-                factor = 1.0/inkex.unittouu('1'+self.options.unit)
+                factor = 1.0/self.unittouu('1'+self.options.unit)
                 if self.options.type == "length":
                     slengths, stotal = csplength(p)
                 else:
